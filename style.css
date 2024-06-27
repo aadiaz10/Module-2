@@ -1,0 +1,80 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#work .project {
+    margin: 20px 0;
+}
+
+#work .project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured {
+    width: 100%;
+}
+
+.featured img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .featured img {
+        width: 200%;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive layout */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
